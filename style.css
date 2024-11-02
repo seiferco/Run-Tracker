@@ -1,0 +1,251 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(202, 202, 202);
+}
+
+footer {
+    text-align: center;
+    padding: 0px;
+    background-color: #333;
+    color: #fff;
+}
+
+nav {
+    border: 1px solid black;
+    font-size: 30px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+nav a:hover {
+    color: #007BFF;            
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 25px;
+}
+
+/*Home Screen CSS */
+#IH-1{
+    text-align: center;
+}
+
+#features {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    margin-top: 0px;
+}
+
+#features a {
+    margin: 20px 0;
+    font-size: 30px;
+}
+
+#features a:hover {
+    color: #007BFF
+}
+
+.feature-box {
+    border: 2px solid #333; 
+    padding: 20px;          
+    margin: 10px 0;       
+    width: 200px;          
+    border-radius: 5px; 
+    background-color: #f9f9f9;
+}
+
+/*Help Screen CSS*/
+#all-help-text {
+    text-align: center;
+    border: 1px solid black;
+    margin: 20px; 
+    padding: 10px; 
+    flex: 1;
+}
+
+#about-us {  
+    line-height: 0.5; 
+    margin-bottom:80px; 
+}
+
+#help-1 {
+    line-height: 0.5; 
+    margin-bottom:80px;  
+}
+
+#help-2 {
+    line-height: 0.5; 
+    margin-bottom:80px;  
+}
+
+#help-3 {
+    line-height: 0.5; 
+    margin-bottom:80px;  
+}
+
+/* View Runs Page CSS*/
+#run-border {
+    border: 3px solid black;
+    height: 100vh;
+    margin: 1px 300px;
+
+}
+
+#list-of-runs {
+    text-align: center;
+}
+
+.run {
+    line-height: 0.5; 
+    padding: 5px;
+}
+
+.run:hover {
+    color: #f8f8f8fd;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(60, 134, 209, 0.3);
+}
+
+.run h2:hover {
+    color: #f8f8f8fd;
+}
+
+.run p {
+    color: initial; 
+}
+
+.runFeature {
+    font-weight: bold;
+}
+
+
+/* Add Run Modal */
+#newRunButton{
+    font-size: 20px;
+    margin: 0 400px;
+    margin-bottom: 20px;
+}
+
+#newCloseBtn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#newCloseBtn:hover,
+#newCloseBtn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button[type="newRunSubmit"] {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="newRunSubmit"]:hover {
+    background-color: #0056b3;
+}
+
+/*Edit Run Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 5px;
+    width: 90%; /* More responsive */
+    max-width: 500px; /* Limit the max width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#editCloseBtn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#editCloseBtn:hover,
+#editCloseBtn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content h2 {
+    margin-top: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="editRunSubmit"] {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="editRunSubmit"]:hover {
+    background-color: #0056b3;
+}
+
+/* MOTIVATIONAL QUOTE PAGE */
+#generateQuoteButton {
+    font-size: 20px;
+    margin: 0 400px;
+    margin-bottom: 20px;
+}
+

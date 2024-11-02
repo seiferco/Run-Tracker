@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Run Tracker</title>
+</head>
+<body>
+
+    <div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html">Go Back</a>          
+        </nav>
+    </div>
+
+    <div class="page-title">
+        <h1>View of Runs</h1>
+    </div>
+    
+    <div id="run-border">
+        <div id="list-of-runs">
+            <div class="run" data-index="0">
+                <h2>========= <span class="name">Run 1</span> =========</h2>
+                <p><span class="runFeature">Distance: </span> <span class="distance">5 miles</span></p>
+                <p><span class="runFeature">Start: </span> <span class="start">My House</span></p>
+                <p><span class="runFeature">End: </span> <span class="end">Trader Joes</span></p>
+                <h2>========================</h2>
+            </div>
+
+            <div class="run" data-index="1">
+                <h2>========= <span class="name">Run 2</span> =========</h2>
+                <p><span class="runFeature">Distance: </span> <span class="distance">2 miles</span></p>
+                <p><span class="runFeature">Start: </span> <span class="start">Avery Park</span></p>
+                <p><span class="runFeature">End: </span> <span class="end">Dixon Recreation Center</span></p>
+                <h2>========================</h2>
+            </div>
+        </div>
+    </div>
+
+    <button id="newRunButton">Add New Run</button>
+    
+    
+    <div id="newRunModal" class="modal">
+        <div class="modal-content">
+            <span id="newCloseBtn">&times;</span>
+            <h2>New Run</h2>
+            <form id="newRunForm">
+                <label for="newName">Name:</label>
+                <input type="text" id="newName" name="newName" required>
+    
+                <label for="newDistance">Distance (mi):</label>
+                <input type="number" id="newDistance" name="newDistance" required>
+    
+                <label for="newStart">Start:</label>
+                <input type="text" id="newStart" name="newStart" required>
+    
+                <label for="newStop">Stop:</label>
+                <input type="text" id="newStop" name="newStop" required>
+    
+                <button type="newRunSubmit">Submit</button>
+            </form>
+        </div>
+    </div>
+    
+    <div id="editRunModal" class="modal">
+        <div class="modal-content">
+            <span id="editCloseBtn">&times;</span>
+            <div class="form-container">
+                <h2>Edit Run</h2>
+                <form id="editRunForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+        
+                    <label for="distance">Distance (mi):</label>
+                    <input type="number" id="distance" name="distance" required>
+        
+                    <label for="start">Start:</label>
+                    <input type="text" id="start" name="start" required>
+        
+                    <label for="stop">Stop:</label>
+                    <input type="text" id="stop" name="stop" required>
+        
+                    <button id="editSubmitBtn" type="editRunSubmit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <p>Created by Cole Seifert 10/31/2024</p>
+    </footer>
